@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import {FaRunning } from "react-icons/fa";
+import { GiGamepad, GiWeightLiftingUp, GiMusicSpell, GiBasketballJersey   } from "react-icons/gi";
 
 function AboutCard() {
   return (
@@ -8,33 +9,38 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, <br /><br /> My name is <span className="purple">Anthony Thanpoovong </span>
+            and I'm from <span className="purple"> Toronto, Ontario.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I'm currently in my 5th year as a software engineering student at Toronto Metropolitan University
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I'm passionate about software development, security engineering and mobile development.  
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            In my free time, I enjoy
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <GiGamepad  /> Playing Video Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <GiWeightLiftingUp  /> Weight Lifting
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <FaRunning  /> Running
+            </li>
+            <li className="about-activity">
+              <GiMusicSpell  /> Raving
+            </li>
+            <li className="about-activity">
+              <GiBasketballJersey  /> Playing Sports
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Be passionate about what you do!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Anthony T</footer>
         </blockquote>
       </Card.Body>
     </Card>
