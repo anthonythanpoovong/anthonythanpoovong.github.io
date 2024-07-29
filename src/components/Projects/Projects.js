@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
+import bookstore from "../../Assets/Projects/bookstore.jpg";
+import administration from "../../Assets/Projects/administration-system.png";
+import analysis from "../../Assets/Projects/prison-break.png";
+import doorlock from "../../Assets/Projects/keypad-door-lock.jpg";
 
 function Projects() {
   return (
@@ -20,70 +22,55 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={bookstore}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Book Store"
+              description="A book store application that allows customers to purchase from a catalogue of books using a checkbox feature. The owners can add more books to the catalogue and adjust the prices. This program uses Java and Java FXML to create the GUI and application of the program  "
+              ghLink="https://github.com/anthonythanpoovong/BookStore-App"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={administration}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Better RAMSS"
+              description="A university student administration system that lets students see their personal information, financial fees, courses, and grades. The admins can see the students in a course, the professors teaching the course and the grades of the students. This application uses Oracle Apex and SQL to manipulate the data and queries given."
+              ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
+              demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={tictactoe}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Tic-Tac-Toe"
+              description="A Tic-Tac-Toe application that uses Python to let either 1 or 2 players play a game of Tic-Tac-Toe."
+              ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"            
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              
+              imgPath={analysis}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Helicopter Prison Break Analysis"
+              description="Using Python and Jupyter Notebook, I analyzed all th Helicopter Prison breaks and viewed the statistics using inforgraphics and chats."
+              ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              
+              imgPath={doorlock}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Key Pad Door Lock"
+              description="Using C++ and a Arduino Kit, I was able to reuse cardboard as a safe box, to keep any items inside the safe. This project used a Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock and IRF510N MOSFET. "
+              ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
