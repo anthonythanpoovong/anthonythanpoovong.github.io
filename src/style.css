@@ -739,6 +739,10 @@ button:focus {
   height: auto !important;
 }
 
+.experience-card-view .card-title {
+  color: rgb(240, 126, 219); /* Change the color to purple */
+}
+
 .experience-card-view {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
@@ -785,7 +789,7 @@ button:focus {
 }
 
 .card-img-top {
-  padding: 20px !important;
+  padding: 50px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
 }
