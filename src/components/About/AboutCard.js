@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import {FaRunning } from "react-icons/fa";
 import { GiGamepad, GiWeightLiftingUp, GiMusicSpell, GiBasketballJersey   } from "react-icons/gi";
+import { IoFastFoodOutline } from "react-icons/io5";
 
 function AboutCard() {
   return (
@@ -30,7 +31,7 @@ function AboutCard() {
               <FaRunning  /> Running
             </li>
             <li className="about-activity">
-              <GiMusicSpell  /> Raving
+              <IoFastFoodOutline  /> Trying New Food Spots
             </li>
             <li className="about-activity">
               <GiBasketballJersey  /> Playing Sports
