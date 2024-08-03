@@ -21,8 +21,8 @@ function Experience() {
           Here are my past work experiences
         </p>
         <Row className="justify-content-center mt-4"> {/* Added mt-4 for margin-top */}
-          <Col md={4} className="d-flex flex-column align-items-center">
-          <div className="mb-4">
+          <Col md={8} className="d-flex flex-column align-items-center">
+            <div className="mb-4">
               <ExperienceCard
                 imgPath={ezML}
                 isBlog={false}

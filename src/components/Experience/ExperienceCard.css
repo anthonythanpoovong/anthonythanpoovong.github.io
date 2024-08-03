@@ -1,0 +1,13 @@
+.experience-card-view {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .experience-card-view .card-title {
+    color: purple; /* Change the color to purple */
+  }
+  
+  .experience-card-view .card-img-top {
+    width: 100%; /* Ensure the image takes the full width of the column */
+    height: auto;
+  }
+  
