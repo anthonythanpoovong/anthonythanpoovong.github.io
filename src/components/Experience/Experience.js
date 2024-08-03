@@ -27,14 +27,14 @@ function Experience() {
                 imgPath={ezML}
                 isBlog={false}
                 title="Software Engineer Intern"
-                subtitle="Company ABC, June 2021 - August 2021"
-                subtitle2="Location: New York, NY"
+                subtitle="ezML"
+                subtitle2="February 2024 - April 2024"
+                subtitle3="San Francisco, CA"
                 bullets={[
-                  "Using Python and Jupyter Notebook",
-                  "Analyzed all the Helicopter Prison breaks",
-                  "Viewed the statistics using infographics and charts"
+                  "Deployed a cloud-based server to store videos for ezML’s computer vision program",
+                  "Developed a front-end interface for customers to schedule a consultation with ezML",
+                  "Worked with the back-end team to conduct code reviews on CV pipelines"
                 ]}
-                ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
               />
             </div>
             <div className="mb-4">
@@ -42,14 +42,17 @@ function Experience() {
                 imgPath={scotiabank}
                 isBlog={false}
                 title="Security Engineer Intern"
-                subtitle="Company XYZ, September 2021 - December 2021"
-                subtitle2="Location: Toronto, ON"
+                subtitle="Scotiabank"
+                subtitle2="September 2023 - December 2023"
+                subtitle3="Toronto, ON"
                 bullets={[
-                  "A book store application that allows customers to purchase from a catalogue of books using a checkbox feature",
-                  "Owners can add more books to the catalogue and adjust the prices",
-                  "Uses Java and Java FXML to create the GUI and application"
+                  "Performed a backup of the MySQL database and executed a vault migration due to an update to RHEL8",
+                  "Produced scripts in Vim to resolve the issue of crontabs not being connected to the MySQL servers",
+                  "Deploying vaults through Scotiabank’s Linux servers on unresponsive servers to increase client efficiency by 20%",
+                  "Managing API calls to the vault and the MySQL server while deploying visual data on PowerBI",
+                  "Researching and documenting the Confluence pages on the threats and use cases of Quantum Cryptography",
+                  "Rotating as Cloud Security Engineer to troubleshoot Kubernetes deployment issues"
                 ]}
-                ghLink="https://github.com/anthonythanpoovong/BookStore-App"
               />
             </div>
             <div className="mb-4">
@@ -57,16 +60,15 @@ function Experience() {
                 imgPath={td}
                 isBlog={false}
                 title="Quality Engineer Intern"
-                subtitle="Company DEF, January 2022 - April 2022"
-                subtitle2="Location: Vancouver, BC"
+                subtitle="TD Bank"
+                subtitle2="May 2023 - August 2023"
+                subtitle3="Toronto, ON"
                 bullets={[
-                  "A university student administration system",
-                  "Students can see their personal information, financial fees, courses, and grades",
-                  "Admins can see the students in a course, the professors teaching the course, and the grades of the students",
-                  "Uses Oracle Apex and SQL to manipulate the data and queries"
+                  "Collaborated in a small team of 10 to extract data from TD’s Wealth and Finance databases using SQL",
+                  "Composed over 100 feature files for the Security Management Team and DaaS platforms using Java and Selenium",
+                  "Tested and mapped the traceability of the data through several test cases and TD automated tools to increase efficiency by 20%",
+                  "Developed scripts that automated tasks such as database backups and restore servers, saving approximately 20 hours per week"
                 ]}
-                ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
-                demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
               />
             </div>
             <div className="mb-4">
@@ -74,14 +76,14 @@ function Experience() {
                 imgPath={eastside}
                 isBlog={false}
                 title="Software Developer"
-                subtitle="Company GHI, May 2022 - August 2022"
-                subtitle2="Location: Seattle, WA"
+                subtitle="Eastside"
+                subtitle2="January 2023 - August 2023"
+                subtitle3="Toronto, ON"
                 bullets={[
-                  "Using C++ and an Arduino Kit",
-                  "Reused cardboard as a safe box to keep items inside",
-                  "Used an Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock, and IRF510N MOSFET"
+                  "Supported in the development of the company's website using Tailwind CSS, React.js and Material UI",
+                  "Planned weekly sprints using Jira",
+                  "Updated and maintained the company's website with new contentm, videos and photos"
                 ]}
-                ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
               />
             </div>
             <div className="mb-4">
@@ -89,13 +91,15 @@ function Experience() {
                 imgPath={ldrs}
                 isBlog={false}
                 title="Full Stack Developer Intern"
-                subtitle="Company JKL, September 2022 - December 2022"
-                subtitle2="Location: San Francisco, CA"
+                subtitle="LDRS Investments Incorporated"
+                subtitle2="January 2023 - April 2023"
+                subtitle3="Toronto, ON"
                 bullets={[
-                  "A Tic-Tac-Toe application using Python",
-                  "Allows either 1 or 2 players to play a game of Tic-Tac-Toe"
+                  "Produced a full-stack website in a small team of 4 using Django, MySQL, Python, Javascript and React.Js",
+                  "Designed an instantaneous chat feature for customer-to-service representatives using Django channels and React.Js that helped increase customer service by 70%",
+                  "Implemented a login-authentication screen for newly registered users that boasts the security of the platform by 36%",
+                  "Devised and upheld sprints through Trello and Git Bash to increase efficiency by 22%"
                 ]}
-                ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
               />
             </div>
             <div className="mb-4">
@@ -103,14 +107,14 @@ function Experience() {
                 imgPath={bgctk}
                 isBlog={false}
                 title="Kids Tech Nation Mentor"
-                subtitle="Company MNO, January 2023 - April 2023"
-                subtitle2="Location: Chicago, IL"
+                subtitle="BGCTK"
+                subtitle2="September 2022 - December 2022"
+                subtitle3="Toronto, ON"
                 bullets={[
-                  "Using C++ and an Arduino Kit",
-                  "Reused cardboard as a safe box to keep items inside",
-                  "Used an Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock, and IRF510N MOSFET"
+                  "Devised a curriculum for kids to learn Scratch",
+                  "Created weekly presentations and tasks for each new topic",
+                  "Raised over $5000 in funding for new equipment such as laptops, tablets, keyboards and etc.."
                 ]}
-                ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
               />
             </div>
           </Col>

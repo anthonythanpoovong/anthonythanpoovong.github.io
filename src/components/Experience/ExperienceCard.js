@@ -32,6 +32,14 @@ function ExperienceCard(props) {
                 {props.subtitle2}
               </Card.Subtitle>
             )}
+            {props.subtitle3 && (
+              <Card.Subtitle
+                className="mb-2 subtitle"
+                style={{ fontStyle: "italic", color: "white" }} // Added color: white
+              >
+                {props.subtitle3}
+              </Card.Subtitle>
+            )}
             <Card.Text style={{ textAlign: "justify" }}>
               <ul>
                 {props.bullets.map((bullet, index) => (
@@ -39,24 +47,6 @@ function ExperienceCard(props) {
                 ))}
               </ul>
             </Card.Text>
-            <Button variant="primary" href={props.ghLink} target="_blank">
-              <BsGithub /> &nbsp;
-              {props.isBlog ? "Blog" : "GitHub"}
-            </Button>
-            {"\n"}
-            {"\n"}
-
-            {!props.isBlog && props.demoLink && (
-              <Button
-                variant="primary"
-                href={props.demoLink}
-                target="_blank"
-                style={{ marginLeft: "10px" }}
-              >
-                <CgWebsite /> &nbsp;
-                {"Demo"}
-              </Button>
-            )}
           </Col>
         </Row>
       </Card.Body>
