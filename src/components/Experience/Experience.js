@@ -27,7 +27,13 @@ function Experience() {
                 imgPath={ezML}
                 isBlog={false}
                 title="Software Engineer Intern"
-                description="Using Python and Jupyter Notebook, I analyzed all the Helicopter Prison breaks and viewed the statistics using infographics and charts."
+                subtitle="Company ABC, June 2021 - August 2021"
+                subtitle2="Location: New York, NY"
+                bullets={[
+                  "Using Python and Jupyter Notebook",
+                  "Analyzed all the Helicopter Prison breaks",
+                  "Viewed the statistics using infographics and charts"
+                ]}
                 ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
               />
             </div>
@@ -36,7 +42,13 @@ function Experience() {
                 imgPath={scotiabank}
                 isBlog={false}
                 title="Security Engineer Intern"
-                description="A book store application that allows customers to purchase from a catalogue of books using a checkbox feature. The owners can add more books to the catalogue and adjust the prices. This program uses Java and Java FXML to create the GUI and application of the program."
+                subtitle="Company XYZ, September 2021 - December 2021"
+                subtitle2="Location: Toronto, ON"
+                bullets={[
+                  "A book store application that allows customers to purchase from a catalogue of books using a checkbox feature",
+                  "Owners can add more books to the catalogue and adjust the prices",
+                  "Uses Java and Java FXML to create the GUI and application"
+                ]}
                 ghLink="https://github.com/anthonythanpoovong/BookStore-App"
               />
             </div>
@@ -45,7 +57,14 @@ function Experience() {
                 imgPath={td}
                 isBlog={false}
                 title="Quality Engineer Intern"
-                description="A university student administration system that lets students see their personal information, financial fees, courses, and grades. The admins can see the students in a course, the professors teaching the course and the grades of the students. This application uses Oracle Apex and SQL to manipulate the data and queries given."
+                subtitle="Company DEF, January 2022 - April 2022"
+                subtitle2="Location: Vancouver, BC"
+                bullets={[
+                  "A university student administration system",
+                  "Students can see their personal information, financial fees, courses, and grades",
+                  "Admins can see the students in a course, the professors teaching the course, and the grades of the students",
+                  "Uses Oracle Apex and SQL to manipulate the data and queries"
+                ]}
                 ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
                 demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
               />
@@ -55,7 +74,13 @@ function Experience() {
                 imgPath={eastside}
                 isBlog={false}
                 title="Software Developer"
-                description="Using C++ and an Arduino Kit, I was able to reuse cardboard as a safe box, to keep any items inside the safe. This project used an Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock, and IRF510N MOSFET."
+                subtitle="Company GHI, May 2022 - August 2022"
+                subtitle2="Location: Seattle, WA"
+                bullets={[
+                  "Using C++ and an Arduino Kit",
+                  "Reused cardboard as a safe box to keep items inside",
+                  "Used an Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock, and IRF510N MOSFET"
+                ]}
                 ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
               />
             </div>
@@ -64,7 +89,12 @@ function Experience() {
                 imgPath={ldrs}
                 isBlog={false}
                 title="Full Stack Developer Intern"
-                description="A Tic-Tac-Toe application that uses Python to let either 1 or 2 players play a game of Tic-Tac-Toe."
+                subtitle="Company JKL, September 2022 - December 2022"
+                subtitle2="Location: San Francisco, CA"
+                bullets={[
+                  "A Tic-Tac-Toe application using Python",
+                  "Allows either 1 or 2 players to play a game of Tic-Tac-Toe"
+                ]}
                 ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
               />
             </div>
@@ -73,7 +103,13 @@ function Experience() {
                 imgPath={bgctk}
                 isBlog={false}
                 title="Kids Tech Nation Mentor"
-                description="Using C++ and an Arduino Kit, I was able to reuse cardboard as a safe box, to keep any items inside the safe. This project used an Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock, and IRF510N MOSFET."
+                subtitle="Company MNO, January 2023 - April 2023"
+                subtitle2="Location: Chicago, IL"
+                bullets={[
+                  "Using C++ and an Arduino Kit",
+                  "Reused cardboard as a safe box to keep items inside",
+                  "Used an Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock, and IRF510N MOSFET"
+                ]}
                 ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
               />
             </div>

@@ -16,8 +16,28 @@ function ExperienceCard(props) {
           </Col>
           <Col md={8}>
             <Card.Title className="card-title">{props.title}</Card.Title>
+            {props.subtitle && (
+              <Card.Subtitle
+                className="mb-2 subtitle"
+                style={{ fontStyle: "italic", color: "white" }} // Added color: white
+              >
+                {props.subtitle}
+              </Card.Subtitle>
+            )}
+            {props.subtitle2 && (
+              <Card.Subtitle
+                className="mb-2 subtitle"
+                style={{ fontStyle: "italic", color: "white" }} // Added color: white
+              >
+                {props.subtitle2}
+              </Card.Subtitle>
+            )}
             <Card.Text style={{ textAlign: "justify" }}>
-              {props.description}
+              <ul>
+                {props.bullets.map((bullet, index) => (
+                  <li key={index}>{bullet}</li>
+                ))}
+              </ul>
             </Card.Text>
             <Button variant="primary" href={props.ghLink} target="_blank">
               <BsGithub /> &nbsp;
@@ -25,8 +45,6 @@ function ExperienceCard(props) {
             </Button>
             {"\n"}
             {"\n"}
-
-            {/* If the component contains Demo link and if it's not a Blog then, it will render the below component */}
 
             {!props.isBlog && props.demoLink && (
               <Button

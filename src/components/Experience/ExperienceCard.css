@@ -3,11 +3,29 @@
   }
   
   .experience-card-view .card-title {
-    color: purple; /* Change the color to purple */
+    color: rgb(210, 25, 210); /* Change the color to purple */
   }
   
   .experience-card-view .card-img-top {
     width: 100%; /* Ensure the image takes the full width of the column */
     height: auto;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: rgb(209, 32, 209); /* Ensure the color remains purple */
+  }
+  
+  .card-title {
+    color: rgb(210, 29, 210); /* Ensure the color remains purple */
+  }
+  
+  .bold-title {
+    font-weight: bold;
+  }
+  
+  .subtitle1 {
+    font-style: italic;
+    color: white;
   }
   
