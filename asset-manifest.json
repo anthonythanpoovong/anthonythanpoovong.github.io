@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.9b07ad6a.css",
+    "main.js": "/react-gh-pages/static/js/main.e9436dea.js",
+    "static/js/770.b477def6.chunk.js": "/react-gh-pages/static/js/770.b477def6.chunk.js",
+    "static/js/453.1407b060.chunk.js": "/react-gh-pages/static/js/453.1407b060.chunk.js",
+    "static/media/prison-break.png": "/react-gh-pages/static/media/prison-break.57721656f3fea1a4d5a9.png",
+    "static/media/home-main.svg": "/react-gh-pages/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/about.png": "/react-gh-pages/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/eastside.png": "/react-gh-pages/static/media/eastside.94459dc0e741f8e1c206.png",
+    "static/media/scotiabank.png": "/react-gh-pages/static/media/scotiabank.17c0c1b9df07f5d2d7cd.png",
+    "static/media/Anthony_Thanpoovong_Resume_V1.pdf": "/react-gh-pages/static/media/Anthony_Thanpoovong_Resume_V1.c57fd469e5cd363a07d4.pdf",
+    "static/media/bgctk.png": "/react-gh-pages/static/media/bgctk.7b963de32fb46ff9527c.png",
+    "static/media/avatar.png": "/react-gh-pages/static/media/avatar.a1b4209dd971d428401a.png",
+    "static/media/keypad-door-lock.jpg": "/react-gh-pages/static/media/keypad-door-lock.a8a821d4f289235ceaff.jpg",
+    "static/media/ezML_2.png": "/react-gh-pages/static/media/ezML_2.42adec554e96709a371c.png",
+    "static/media/administration-system.png": "/react-gh-pages/static/media/administration-system.a5aab0a8e15c5e2ec7d0.png",
+    "static/media/logo.png": "/react-gh-pages/static/media/logo.8a9e07bd1b3d8cf99265.png",
+    "static/media/home-bg.jpg": "/react-gh-pages/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/bookstore.jpg": "/react-gh-pages/static/media/bookstore.be855adecbab56f42c3f.jpg",
+    "static/media/tic-tac-toe.png": "/react-gh-pages/static/media/tic-tac-toe.1f681c7174ad88a8e511.png",
+    "static/media/pre.svg": "/react-gh-pages/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.9b07ad6a.css.map": "/react-gh-pages/static/css/main.9b07ad6a.css.map",
+    "main.e9436dea.js.map": "/react-gh-pages/static/js/main.e9436dea.js.map",
+    "770.b477def6.chunk.js.map": "/react-gh-pages/static/js/770.b477def6.chunk.js.map",
+    "453.1407b060.chunk.js.map": "/react-gh-pages/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b07ad6a.css",
+    "static/js/main.e9436dea.js"
+  ]
+}
