@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import administration from "../../Assets/Projects/admin.png";
+import LLM from "../../Assets/Projects/ai.png";
 import basketball from "../../Assets/Projects/basketball.png";
 import bookstore from "../../Assets/Projects/book-shop.png";
 import doorlock from "../../Assets/Projects/keypad.png";
@@ -22,6 +23,22 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LLM}
+              isBlog={false}
+              title="LLM Tabular Data Analysis"
+              description={
+                <ul>
+                  <li>System accepts tabular data input in formats like CSV and or Excel</li>
+                  <li>Manipulating data processing using Pandas</li>
+                  <li>Using machine learning techniques such as regression analysis, clustering, or clustering</li>
+                  <li>LLM can detect trends and patterns, to summarize and display visualizations of the tabular data </li>
+                </ul>
+              }
+              ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={basketball}
