@@ -1,12 +1,13 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
-import bookstore from "../../Assets/Projects/bookstore.jpg";
+import { Col, Container, Row } from "react-bootstrap";
 import administration from "../../Assets/Projects/administration-system.png";
-import analysis from "../../Assets/Projects/prison-break.png";
+import bookstore from "../../Assets/Projects/bookstore.jpg";
 import doorlock from "../../Assets/Projects/keypad-door-lock.jpg";
+import analysis from "../../Assets/Projects/prison-break.png";
+import resume from "../../Assets/Projects/resume_2.png";
+import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
+import Particle from "../Particle";
+import ProjectCard from "./ProjectCards";
 
 function Projects() {
   return (
@@ -14,7 +15,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -22,10 +23,33 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={resume}
+              isBlog={false}
+              title="Resumeholic"
+              description={
+                <ul>
+                  <li>Resume-building web application</li>
+                  <li>Users can create and save resumes</li>
+                  <li>Implemented with Java, HTML, Docker, Kubernetes</li>
+                  <li>Microservices deployed on Google Cloud</li>
+                </ul>
+              }
+              ghLink="https://github.com/Resumeholic/resumeholic-prototype"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={bookstore}
               isBlog={false}
               title="Book Store"
-              description="A book store application that allows customers to purchase from a catalogue of books using a checkbox feature. The owners can add more books to the catalogue and adjust the prices. This program uses Java and Java FXML to create the GUI and application of the program  "
+              description={
+                <ul>
+                  <li>Customers purchase books from a catalog using checkboxes</li>
+                  <li>Owners can add books and adjust prices</li>
+                  <li>Built with Java and Java FXML for GUI</li>
+                </ul>
+              }
               ghLink="https://github.com/anthonythanpoovong/BookStore-App"
             />
           </Col>
@@ -35,7 +59,14 @@ function Projects() {
               imgPath={administration}
               isBlog={false}
               title="Better RAMSS"
-              description="A university student administration system that lets students see their personal information, financial fees, courses, and grades. The admins can see the students in a course, the professors teaching the course and the grades of the students. This application uses Oracle Apex and SQL to manipulate the data and queries given."
+              description={
+                <ul>
+                  <li>University student administration system</li>
+                  <li>Students view personal info, fees, courses, and grades</li>
+                  <li>Admins manage students, professors, and grades</li>
+                  <li>Built with Oracle Apex and SQL</li>
+                </ul>
+              }
               ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
               demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
             />
@@ -46,8 +77,13 @@ function Projects() {
               imgPath={tictactoe}
               isBlog={false}
               title="Tic-Tac-Toe"
-              description="A Tic-Tac-Toe application that uses Python to let either 1 or 2 players play a game of Tic-Tac-Toe."
-              ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"            
+              description={
+                <ul>
+                  <li>1 or 2-player Tic-Tac-Toe game</li>
+                  <li>Implemented using Python</li>
+                </ul>
+              }
+              ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
             />
           </Col>
 
@@ -56,7 +92,13 @@ function Projects() {
               imgPath={analysis}
               isBlog={false}
               title="Helicopter Prison Break Analysis"
-              description="Using Python and Jupyter Notebook, I analyzed all th Helicopter Prison breaks and viewed the statistics using inforgraphics and chats."
+              description={
+                <ul>
+                  <li>Analyzed helicopter prison breaks</li>
+                  <li>Used Python and Jupyter Notebook</li>
+                  <li>Created infographics and charts for data visualization</li>
+                </ul>
+              }
               ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
             />
           </Col>
@@ -66,11 +108,16 @@ function Projects() {
               imgPath={doorlock}
               isBlog={false}
               title="Key Pad Door Lock"
-              description="Using C++ and a Arduino Kit, I was able to reuse cardboard as a safe box, to keep any items inside the safe. This project used a Arduino Uno, LCD, 4x4 Keypad, Linear Solenoid Lock and IRF510N MOSFET. "
+              description={
+                <ul>
+                  <li>Created a keypad-based door lock system</li>
+                  <li>Used C++ and an Arduino Kit</li>
+                  <li>Components: Arduino Uno, LCD, 4x4 Keypad, Solenoid Lock</li>
+                </ul>
+              }
               ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
             />
           </Col>
-
         </Row>
       </Container>
     </Container>

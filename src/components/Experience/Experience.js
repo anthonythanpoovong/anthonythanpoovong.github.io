@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ExperienceCard from "./ExperienceCard";
-import Particle from "../Particle";
-import ezML from "../../Assets/Projects/ezML_2.png";
-import scotiabank from "../../Assets/Projects/scotiabank.png";
-import td from "../../Assets/Projects/td.png";
-import ldrs from "../../Assets/Projects/ldrs.png";
+import { Col, Container, Row } from "react-bootstrap";
 import bgctk from "../../Assets/Projects/bgctk.png";
 import eastside from "../../Assets/Projects/eastside.png";
+import ezML from "../../Assets/Projects/ezML_2.png";
+import ldrs from "../../Assets/Projects/ldrs.png";
+import scotiabank from "../../Assets/Projects/scotiabank.png";
+import td from "../../Assets/Projects/td.png";
+import Particle from "../Particle";
+import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
   return (
