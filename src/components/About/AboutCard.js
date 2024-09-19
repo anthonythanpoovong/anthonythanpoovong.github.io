@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import {FaRunning } from "react-icons/fa";
-import { GiGamepad, GiWeightLiftingUp, GiBasketballJersey   } from "react-icons/gi";
+import { FaRunning } from "react-icons/fa";
+import { GiBasketballJersey, GiGamepad, GiWeightLiftingUp } from "react-icons/gi";
 import { IoFastFoodOutline } from "react-icons/io5";
 
 function AboutCard() {
