@@ -1,0 +1,33 @@
+.project-card-view {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card-view .card-img {
+    width: 100%;         /* Set the image to take full width of the card */
+    height: 200px;       /* Set a fixed height for all images */
+    object-fit: cover;   /* Ensure the image covers the area without being distorted */
+    border-radius: 10px; /* Optional: Adds a rounded corner effect */
+  }
+  
+  
+  .project-card-view .card-body {
+    flex-grow: 1; /* Makes the body take up the remaining space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card-view .card-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .project-card-view .card-text {
+    flex-grow: 1; /* Ensures that text content stretches to fill the available space */
+  }
+  
+  .project-card-view .btn {
+    margin-top: auto; /* Pushes the buttons to the bottom of the card */
+  }
+  

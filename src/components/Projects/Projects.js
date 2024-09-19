@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import administration from "../../Assets/Projects/administration-system.png";
-import bookstore from "../../Assets/Projects/bookstore.jpg";
-import doorlock from "../../Assets/Projects/keypad-door-lock.jpg";
-import analysis from "../../Assets/Projects/prison-break.png";
+import administration from "../../Assets/Projects/admin.png";
+import basketball from "../../Assets/Projects/basketball.png";
+import bookstore from "../../Assets/Projects/book-shop.png";
+import doorlock from "../../Assets/Projects/keypad.png";
+import analysis from "../../Assets/Projects/prison.png";
 import resume from "../../Assets/Projects/resume_2.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
 import Particle from "../Particle";
@@ -21,6 +22,22 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={basketball}
+              isBlog={false}
+              title="NBA Sports Betting Analyis Application"
+              description={
+                <ul>
+                  <li>Resume-building web application</li>
+                  <li>Users can create, edit and save resumes</li>
+                  <li>Implemented with Java, HTML, Docker, Kubernetes</li>
+                  <li>Microservices deployed on Google Cloud</li>
+                </ul>
+              }
+              ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={resume}
@@ -29,7 +46,7 @@ function Projects() {
               description={
                 <ul>
                   <li>Resume-building web application</li>
-                  <li>Users can create and save resumes</li>
+                  <li>Users can create, edit and save resumes</li>
                   <li>Implemented with Java, HTML, Docker, Kubernetes</li>
                   <li>Microservices deployed on Google Cloud</li>
                 </ul>
