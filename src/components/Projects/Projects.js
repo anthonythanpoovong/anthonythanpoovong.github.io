@@ -98,7 +98,8 @@ function Projects() {
               description={
                 <ul>
                   <li>1 or 2-player Tic-Tac-Toe game</li>
-                  <li>Implemented using Python</li>
+                  <li>If one player, user versus an AI</li>
+                  <li>Implemented using Python and and GUI uses Tkinter</li>
                 </ul>
               }
               ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
