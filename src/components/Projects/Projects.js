@@ -29,10 +29,10 @@ function Projects() {
               title="NBA Sports Betting Analyis Application"
               description={
                 <ul>
-                  <li>Resume-building web application</li>
-                  <li>Users can create, edit and save resumes</li>
-                  <li>Implemented with Java, HTML, Docker, Kubernetes</li>
-                  <li>Microservices deployed on Google Cloud</li>
+                  <li>Predicts odds for a player's points, assists, and rebounds</li>
+                  <li>Analyzes team vs team odds</li>
+                  <li>Frontend implemented with Javascript, React, Tailwind</li>
+                  <li>Machine Learning using a supervised dataset with Python </li>
                 </ul>
               }
               ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
@@ -46,7 +46,7 @@ function Projects() {
               description={
                 <ul>
                   <li>Resume-building web application</li>
-                  <li>Users can create, edit and save resumes</li>
+                  <li>Users can login, create, edit and save resumes</li>
                   <li>Implemented with Java, HTML, Docker, Kubernetes</li>
                   <li>Microservices deployed on Google Cloud</li>
                 </ul>
@@ -62,8 +62,9 @@ function Projects() {
               title="Book Store"
               description={
                 <ul>
-                  <li>Customers purchase books from a catalog using checkboxes</li>
+                  <li>A book store application thats allows customers to purchase books from a catalog using checkboxes</li>
                   <li>Owners can add books and adjust prices</li>
+                  <li>Used a hashmap to store the books</li>
                   <li>Built with Java and Java FXML for GUI</li>
                 </ul>
               }
@@ -111,7 +112,7 @@ function Projects() {
               title="Helicopter Prison Break Analysis"
               description={
                 <ul>
-                  <li>Analyzed helicopter prison breaks</li>
+                  <li>Peformed Data Analysis to analyze helicopter prison breaks</li>
                   <li>Used Python and Jupyter Notebook</li>
                   <li>Created infographics and charts for data visualization</li>
                 </ul>
@@ -128,6 +129,7 @@ function Projects() {
               description={
                 <ul>
                   <li>Created a keypad-based door lock system</li>
+                  <li>Alarm will sound when an incorrect password occurs</li>
                   <li>Used C++ and an Arduino Kit</li>
                   <li>Components: Arduino Uno, LCD, 4x4 Keypad, Solenoid Lock</li>
                 </ul>
