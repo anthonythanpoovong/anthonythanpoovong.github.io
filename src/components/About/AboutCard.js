@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import {FaRunning } from "react-icons/fa";
-import { GiGamepad, GiWeightLiftingUp, GiBasketballJersey   } from "react-icons/gi";
+import { FaRunning } from "react-icons/fa";
+import { GiBasketballJersey, GiGamepad, GiWeightLiftingUp } from "react-icons/gi";
 import { IoFastFoodOutline } from "react-icons/io5";
 
 function AboutCard() {
@@ -10,7 +10,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, <br /><br /> My name is <span className="purple">Anthony Thanpoovong </span>
+            Hi Everyoneeee, <br /><br /> My name is <span className="purple">Anthony Thanpoovong </span>
             and I'm from <span className="purple"> Toronto, Ontario.</span>
             <br />
             I'm currently in my 5th year as a software engineering student at Toronto Metropolitan University
