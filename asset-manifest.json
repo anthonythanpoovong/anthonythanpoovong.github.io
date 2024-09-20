@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.630c6f2b.css",
+    "main.js": "/static/js/main.e788bbd3.js",
+    "static/js/770.b477def6.chunk.js": "/static/js/770.b477def6.chunk.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/prison-break.png": "/static/media/prison-break.57721656f3fea1a4d5a9.png",
+    "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/eastside.png": "/static/media/eastside.94459dc0e741f8e1c206.png",
+    "static/media/scotiabank.png": "/static/media/scotiabank.17c0c1b9df07f5d2d7cd.png",
+    "static/media/Anthony_Thanpoovong_Resume_V1.pdf": "/static/media/Anthony_Thanpoovong_Resume_V1.c57fd469e5cd363a07d4.pdf",
+    "static/media/bgctk.png": "/static/media/bgctk.7b963de32fb46ff9527c.png",
+    "static/media/avatar.png": "/static/media/avatar.a1b4209dd971d428401a.png",
+    "static/media/keypad-door-lock.jpg": "/static/media/keypad-door-lock.a8a821d4f289235ceaff.jpg",
+    "static/media/ezML_2.png": "/static/media/ezML_2.42adec554e96709a371c.png",
+    "static/media/administration-system.png": "/static/media/administration-system.a5aab0a8e15c5e2ec7d0.png",
+    "static/media/logo.png": "/static/media/logo.8a9e07bd1b3d8cf99265.png",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/bookstore.jpg": "/static/media/bookstore.be855adecbab56f42c3f.jpg",
+    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.1f681c7174ad88a8e511.png",
+    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/index.html",
+    "main.630c6f2b.css.map": "/static/css/main.630c6f2b.css.map",
+    "main.e788bbd3.js.map": "/static/js/main.e788bbd3.js.map",
+    "770.b477def6.chunk.js.map": "/static/js/770.b477def6.chunk.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.630c6f2b.css",
+    "static/js/main.e788bbd3.js"
+  ]
+}
