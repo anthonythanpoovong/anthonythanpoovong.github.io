@@ -10,20 +10,30 @@
     justify-content: space-between; /* Space cards evenly */
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* Adjust the gap between icons */
+  padding: 0; /* Remove padding if any */
+}
+
+.tech-icons {
+  font-size: 2rem;
+  color: #ffffff; /* Adjust color as needed */
+}
   
 .project-card-view .card-img {
   width: 100%;
-  height: 250px;         /* Fixed height */
+  height: 300px;         /* Fixed height */
   object-fit: contain;   /* Show entire image without cropping */
   border-radius: 10px;   /* Optional: Adds a rounded corner effect */
 }
 
-.card-subtitle {
+.project-card-view .card-subtitle {
   font-size: 1.2em; /* Adjust font size */
-  color: #6c757d;   /* Optional: Set a gray color for the subtitle */
+  color: gray !important;  /* Use !important to override other styles */
   text-align: center; /* Center the subtitle */
 }
-
   
   .project-card-view .card-body {
     flex-grow: 1; /* Makes the body take up the remaining space */
@@ -53,7 +63,7 @@
 
   .project-card-view img {
     width: 100%;
-    height: 200px; /* Adjust the height to your desired size */
+    height: 300px; /* Adjust the height to your desired size */
     object-fit: cover; /* Ensures the image maintains its aspect ratio */
     border-radius: 10px; /* Optional, for rounded corners */
   }
@@ -64,5 +74,7 @@
     overflow: hidden;       /* Hide overflow to maintain layout */
 }
 
-  
+.skills-box {
+  margin: 10px 0;
+} 
   

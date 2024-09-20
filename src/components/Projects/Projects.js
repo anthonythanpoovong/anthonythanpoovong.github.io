@@ -8,6 +8,11 @@ import doorlock from "../../Assets/Projects/keypad.png";
 import analysis from "../../Assets/Projects/prison.png";
 import resume from "../../Assets/Projects/resume_2.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
+
+import { AiOutlineConsoleSql } from "react-icons/ai";
+import { FaDocker, FaJava, FaPython } from "react-icons/fa";
+import { SiKubernetes, SiMysql } from "react-icons/si";
+
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
@@ -36,7 +41,16 @@ function Projects() {
                   <li>LLM can detect trends and patterns, to summarize and display visualizations of the tabular data </li>
                 </ul>
               }
-              subtitle= "Requirements & Elicitation Stage"
+              skills={[
+                <FaPython />,
+                <AiOutlineConsoleSql />,
+                <SiMysql />,
+                <FaDocker />,
+                <SiKubernetes />,
+                <FaJava/>
+                
+              ]}
+              subtitle="Requirements & Elicitation Stage"
             />
           </Col>
         <Col md={4} className="project-card">
