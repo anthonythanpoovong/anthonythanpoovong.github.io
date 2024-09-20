@@ -4,14 +4,25 @@ import administration from "../../Assets/Projects/admin.png";
 import LLM from "../../Assets/Projects/ai.png";
 import basketball from "../../Assets/Projects/basketball.png";
 import bookstore from "../../Assets/Projects/book-shop.png";
+import discord from "../../Assets/Projects/discord.png";
 import doorlock from "../../Assets/Projects/keypad.png";
 import analysis from "../../Assets/Projects/prison.png";
 import resume from "../../Assets/Projects/resume_2.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
 
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import { FaDocker, FaJava, FaPython } from "react-icons/fa";
-import { SiKubernetes, SiMysql } from "react-icons/si";
+import { CgCPlusPlus } from "react-icons/cg";
+import {
+  DiGit,
+  DiHeroku,
+  DiJavascript1,
+  DiMongodb,
+  DiNodejs,
+  DiReact
+} from "react-icons/di";
+import { FaAws, FaCss3, FaDocker, FaHtml5, FaJava, FaPython } from "react-icons/fa";
+import { GrOracle } from "react-icons/gr";
+import { SiApachekafka, SiArduino, SiJupyter, SiKubernetes, SiMysql, SiPrisma, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
@@ -22,12 +33,39 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works</strong>
+          My Recent <strong className="purple">Work</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={discord}
+              isBlog={false}
+              title="Full Stack Discord Clone"
+              description={
+                <ul>
+                  <li>Replicating the discord application both front-end and back-end</li>
+                  <li>User's are able to login and message other people</li>
+                  <li>These messages are stored on the user's account</li>
+                  <li>User's are able to create servers and group chats as well</li>
+                </ul>
+              }
+              skills={[
+                <DiJavascript1/>,
+                <DiMongodb />,
+                <SiMysql/>,
+                <DiReact/>,
+                <SiTailwindcss/>,
+                <FaCss3/>,
+                <SiPrisma/>,
+                <SiTypescript/>,
+                <DiGit/>,
+              ]}
+              subtitle="Planning Phase"
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={LLM}
@@ -44,11 +82,13 @@ function Projects() {
               skills={[
                 <FaPython />,
                 <AiOutlineConsoleSql />,
-                <SiMysql />,
+                <DiMongodb />,
                 <FaDocker />,
                 <SiKubernetes />,
-                <FaJava/>
-                
+                <DiReact/>,
+                <DiJavascript1/>,
+                <FaAws/>,
+                <SiApachekafka/>
               ]}
               subtitle="Requirements & Elicitation Stage"
             />
@@ -66,6 +106,17 @@ function Projects() {
                   <li>Machine Learning using a supervised dataset with Python </li>
                 </ul>
               }
+              skills={[
+                <FaPython />,
+                <DiNodejs/>,
+                <DiReact/>,
+                <DiJavascript1/>,
+                <SiTailwindcss/>,
+                <FaCss3/>,
+                <DiHeroku/>,
+                <DiGit/>,
+                <SiMysql/>  
+              ]}
               subtitle= "Prototype Stage"
               ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
             />
@@ -84,6 +135,13 @@ function Projects() {
                   <li>Microservices deployed on Google Cloud</li>
                 </ul>
               }
+              skills={[
+                <FaJava />,
+                <FaHtml5/>,
+                <FaCss3/>,
+                <FaDocker />,
+                <SiKubernetes />,
+              ]}
               subtitle= "Completed"
               ghLink="https://github.com/Resumeholic/resumeholic-prototype"
             />
@@ -102,6 +160,9 @@ function Projects() {
                   <li>Built with Java and Java FXML for GUI</li>
                 </ul>
               }
+              skills={[
+                <FaJava />
+              ]}
               subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/BookStore-App"
             />
@@ -121,6 +182,11 @@ function Projects() {
                 </ul>
               }
               subtitle= "Completed"
+              skills={[
+                <AiOutlineConsoleSql/>,
+                <GrOracle/>
+              ]}
+              GrOracle
               ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
               demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
             />
@@ -138,6 +204,9 @@ function Projects() {
                   <li>Implemented using Python and and GUI uses Tkinter</li>
                 </ul>
               }
+              skills={[
+                <FaPython />
+              ]}
               subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
             />
@@ -155,6 +224,10 @@ function Projects() {
                   <li>Created infographics and charts for data visualization</li>
                 </ul>
               }
+              skills = {[
+                <FaPython />,
+                <SiJupyter/>
+              ]}
               subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
             />
@@ -173,6 +246,10 @@ function Projects() {
                   <li>Components: Arduino Uno, LCD, 4x4 Keypad, Solenoid Lock</li>
                 </ul>
               }
+              skills = {[
+                <CgCPlusPlus />,
+                <SiArduino/>
+              ]}
               subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
             />
