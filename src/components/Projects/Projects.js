@@ -36,7 +36,7 @@ function Projects() {
                   <li>LLM can detect trends and patterns, to summarize and display visualizations of the tabular data </li>
                 </ul>
               }
-              ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
+              subtitle= "Requirements & Elicitation Stage"
             />
           </Col>
         <Col md={4} className="project-card">
@@ -47,11 +47,12 @@ function Projects() {
               description={
                 <ul>
                   <li>Predicts odds for a player's points, assists, and rebounds</li>
-                  <li>Analyzes team vs team odds</li>
+                  <li>Analyzes team vs team predictions</li>
                   <li>Frontend implemented with Javascript, React, Tailwind</li>
                   <li>Machine Learning using a supervised dataset with Python </li>
                 </ul>
               }
+              subtitle= "Prototype Stage"
               ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
             />
           </Col>
@@ -63,11 +64,13 @@ function Projects() {
               description={
                 <ul>
                   <li>Resume-building web application</li>
-                  <li>Users can login, create, edit and save resumes</li>
+                  <li>Users can login, create, edit and save resumes with their registed account</li>
+                  <li>Built upon previous knowledge of Servlets, Forms and N-tier architecture</li>
                   <li>Implemented with Java, HTML, Docker, Kubernetes</li>
                   <li>Microservices deployed on Google Cloud</li>
                 </ul>
               }
+              subtitle= "Completed"
               ghLink="https://github.com/Resumeholic/resumeholic-prototype"
             />
           </Col>
@@ -85,6 +88,7 @@ function Projects() {
                   <li>Built with Java and Java FXML for GUI</li>
                 </ul>
               }
+              subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/BookStore-App"
             />
           </Col>
@@ -102,6 +106,7 @@ function Projects() {
                   <li>Built with Oracle Apex and SQL</li>
                 </ul>
               }
+              subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
               demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
             />
@@ -119,6 +124,7 @@ function Projects() {
                   <li>Implemented using Python and and GUI uses Tkinter</li>
                 </ul>
               }
+              subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
             />
           </Col>
@@ -135,6 +141,7 @@ function Projects() {
                   <li>Created infographics and charts for data visualization</li>
                 </ul>
               }
+              subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
             />
           </Col>
@@ -152,6 +159,7 @@ function Projects() {
                   <li>Components: Arduino Uno, LCD, 4x4 Keypad, Solenoid Lock</li>
                 </ul>
               }
+              subtitle= "Completed"
               ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
             />
           </Col>

@@ -18,6 +18,11 @@
   border-radius: 10px;   /* Optional: Adds a rounded corner effect */
 }
 
+.card-subtitle {
+  font-size: 1.2em; /* Adjust font size */
+  color: #6c757d;   /* Optional: Set a gray color for the subtitle */
+  text-align: center; /* Center the subtitle */
+}
 
   
   .project-card-view .card-body {
