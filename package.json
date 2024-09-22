@@ -24,6 +24,7 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "^3.0.1",
     "react-tsparticles": "^1.42.2",
+    "typescript": "^3.9.10",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
@@ -57,7 +58,6 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "babel-loader": "^9.2.1",
     "gh-pages": "^6.1.1",
-    "typescript": "^4.9.5",
     "webpack": "^5.94.0"
   }
 }
