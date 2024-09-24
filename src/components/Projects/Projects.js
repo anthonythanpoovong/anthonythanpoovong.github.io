@@ -7,6 +7,7 @@ import bookstore from "../../Assets/Projects/book-shop.png";
 import discord from "../../Assets/Projects/discord.png";
 import doorlock from "../../Assets/Projects/keypad.png";
 import analysis from "../../Assets/Projects/prison.png";
+import recognize from "../../Assets/Projects/recognize.png";
 import resume from "../../Assets/Projects/resume_2.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
 
@@ -22,7 +23,7 @@ import {
 } from "react-icons/di";
 import { FaAws, FaCss3, FaDocker, FaHtml5, FaJava, FaPython } from "react-icons/fa";
 import { GrOracle } from "react-icons/gr";
-import { SiApachekafka, SiArduino, SiJupyter, SiKubernetes, SiMysql, SiPrisma, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiAndroidstudio, SiApachekafka, SiArduino, SiJupyter, SiKubernetes, SiMysql, SiOpencv, SiPrisma, SiTailwindcss, SiTensorflow, SiTypescript } from "react-icons/si";
 
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
@@ -39,6 +40,31 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={recognize}
+              isBlog={false}
+              title="Road Sign Recognition"
+              description={
+                <ul>
+                  <li>Manipulating a phone camera to recognize road signs in Ontario</li>
+                  <li>The project aims to have an accuracy of 80%</li>
+                  <li>Designing and training a deep-learning model to classify different road signs from different angles, weather conditions, and lighting</li>
+                  <li>Enables autonomous vehicles to recognize and respond accordinly to road signs</li>
+                  <li>Helps improve road safety, compliance with traffic laws and driving comfort.</li>
+                </ul>
+              }
+              skills={[
+                <FaPython/>,
+                <SiOpencv/>,
+                <SiTensorflow/>,
+                <DiReact/>,
+                <SiAndroidstudio/>,
+                <FaJava/>,
+              ]}
+              subtitle="Planning Phase"
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={discord}
