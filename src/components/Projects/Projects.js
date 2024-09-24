@@ -245,7 +245,7 @@ function Projects() {
               title="Helicopter Prison Break Analysis"
               description={
                 <ul>
-                  <li>Peformed Data Analysis to analyze helicopter prison breaks</li>
+                  <li>Performed data analysis to analyze helicopter prison breaks</li>
                   <li>Used Python and Jupyter Notebook</li>
                   <li>Created infographics and charts for data visualization</li>
                 </ul>
