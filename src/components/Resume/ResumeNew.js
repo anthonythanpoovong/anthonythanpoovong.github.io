@@ -1,24 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Anthony_Thanpoovong_Resume_V1.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf"; // import pdfjs here
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import pdf from "../../Assets/../Assets/Resume.pdf";
+import Particle from "../Particle";
+
+// Use the correct worker file path from pdfjs-dist
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
+
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -32,7 +38,11 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document
+            file={pdf}
+            className="d-flex justify-content-center"
+            onLoadError={(error) => console.error("Error while loading PDF:", error)}
+          >
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
