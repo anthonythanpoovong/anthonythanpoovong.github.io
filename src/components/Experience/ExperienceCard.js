@@ -1,7 +1,6 @@
-import React from "react";
+import { Col, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { Row, Col } from "react-bootstrap";
-import "./ExperienceCard.css"; // Import the CSS file
+import "./ExperienceCard.css";
 
 function ExperienceCard(props) {
   return (
@@ -9,14 +8,19 @@ function ExperienceCard(props) {
       <Card.Body>
         <Row>
           <Col md={4}>
-            <Card.Img variant="top" src={props.imgPath} alt="card-img" className="card-img-top"/>
+            <Card.Img
+              variant="top"
+              src={props.imgPath}
+              alt="card-img"
+              className={`card-img-top ${props.imgClassName || ""}`}
+            />
           </Col>
           <Col md={8}>
             <Card.Title className="card-title">{props.title}</Card.Title>
             {props.subtitle && (
               <Card.Subtitle
                 className="mb-2 subtitle"
-                style={{ fontStyle: "italic", color: "white" }} // Added color: white
+                style={{ fontStyle: "italic", color: "white" }}
               >
                 {props.subtitle}
               </Card.Subtitle>
@@ -24,7 +28,7 @@ function ExperienceCard(props) {
             {props.subtitle2 && (
               <Card.Subtitle
                 className="mb-2 subtitle"
-                style={{ fontStyle: "italic", color: "white" }} // Added color: white
+                style={{ fontStyle: "italic", color: "white" }}
               >
                 {props.subtitle2}
               </Card.Subtitle>
@@ -32,7 +36,7 @@ function ExperienceCard(props) {
             {props.subtitle3 && (
               <Card.Subtitle
                 className="mb-2 subtitle"
-                style={{ fontStyle: "italic", color: "white" }} // Added color: white
+                style={{ fontStyle: "italic", color: "white" }}
               >
                 {props.subtitle3}
               </Card.Subtitle>

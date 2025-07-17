@@ -8,7 +8,7 @@
   
   .experience-card-view .card-img-top {
     width: 100%; /* Ensure the image takes the full width of the column */
-    height: auto;
+    height: 100%; /* Ensure the image takes the full height of the column */
   }
   
   .card-title {
@@ -23,4 +23,15 @@
   .bold-title {
     font-weight: bold;
   }
+
+  .logo-uniform-size {
+  width: 100%;         /* Fill available width */
+  max-width: 800px;   /* Prevent overly large logos */
+  max-height: 800px;
+  display: block;
+  margin: 0 auto;      /* Center the image horizontally */
+  object-fit: contain; /* Prevent distortion */
+  }
+
+
   

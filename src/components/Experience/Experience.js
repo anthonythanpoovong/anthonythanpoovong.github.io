@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import bgctk from "../../Assets/Projects/bgctk.png";
 import eastside from "../../Assets/Projects/eastside.png";
@@ -6,6 +5,7 @@ import ezML from "../../Assets/Projects/ezML_2.png";
 import ldrs from "../../Assets/Projects/ldrs.png";
 import scotiabank from "../../Assets/Projects/scotiabank.png";
 import td from "../../Assets/Projects/td.png";
+import telus from "../../Assets/Projects/telus.png";
 import Particle from "../Particle";
 import ExperienceCard from "./ExperienceCard";
 
@@ -17,14 +17,29 @@ function Experience() {
         <h1 className="experience-heading">
           <strong className="purple">Relevant Work Experience</strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are my past work experiences
-        </p>
-        <Row className="justify-content-center mt-4"> {/* Added mt-4 for margin-top */}
+        <p style={{ color: "white" }}>Here are my work experiences</p>
+        <Row className="justify-content-center mt-4">
+          {" "}
+          {/* Added mt-4 for margin-top */}
           <Col md={8} className="d-flex flex-column align-items-center">
             <div className="mb-4">
               <ExperienceCard
+                imgPath={telus}
+                imgClassName="logo-uniform-size"
+                isBlog={false}
+                title="Incoming Cybersecurity Engineer"
+                subtitle="Telus"
+                subtitle2="October 2025 - Present"
+                subtitle3="Toronto, ON"
+                bullets={[
+                  "Technology Specialist GTLP - TELUS Cybersecurity Engineer",
+                ]}
+              />
+            </div>
+            <div className="mb-4">
+              <ExperienceCard
                 imgPath={ezML}
+                imgClassName="logo-uniform-size"
                 isBlog={false}
                 title="Software Engineer Intern"
                 subtitle="ezML"
@@ -33,13 +48,14 @@ function Experience() {
                 bullets={[
                   "Deployed a cloud-based server to store videos for ezML’s computer vision program",
                   "Developed a front-end interface for customers to schedule a consultation with ezML",
-                  "Worked with the back-end team to conduct code reviews on CV pipelines"
+                  "Worked with the back-end team to conduct code reviews on CV pipelines",
                 ]}
               />
             </div>
             <div className="mb-4">
               <ExperienceCard
                 imgPath={scotiabank}
+                imgClassName="logo-uniform-size"
                 isBlog={false}
                 title="Security Engineer Intern"
                 subtitle="Scotiabank"
@@ -51,13 +67,14 @@ function Experience() {
                   "Deploying vaults through Scotiabank’s Linux servers on unresponsive servers to increase client efficiency by 20%",
                   "Managing API calls to the vault and the MySQL server while deploying visual data on PowerBI",
                   "Researching and documenting the Confluence pages on the threats and use cases of Quantum Cryptography",
-                  "Rotating as Cloud Security Engineer to troubleshoot Kubernetes deployment issues"
+                  "Rotating as Cloud Security Engineer to troubleshoot Kubernetes deployment issues",
                 ]}
               />
             </div>
             <div className="mb-4">
               <ExperienceCard
                 imgPath={td}
+                imgClassName="logo-uniform-size"
                 isBlog={false}
                 title="Quality Engineer Intern"
                 subtitle="TD Bank"
@@ -67,13 +84,14 @@ function Experience() {
                   "Collaborated in a small team of 10 to extract data from TD’s Wealth and Finance databases using SQL",
                   "Composed over 100 feature files for the Security Management Team and DaaS platforms using Java and Selenium",
                   "Tested and mapped the traceability of the data through several test cases and TD automated tools to increase efficiency by 20%",
-                  "Developed scripts that automated tasks such as database backups and restore servers, saving approximately 20 hours per week"
+                  "Developed scripts that automated tasks such as database backups and restore servers, saving approximately 20 hours per week",
                 ]}
               />
             </div>
             <div className="mb-4">
               <ExperienceCard
                 imgPath={eastside}
+                imgClassName="logo-uniform-size"
                 isBlog={false}
                 title="Software Developer"
                 subtitle="Eastside"
@@ -82,13 +100,14 @@ function Experience() {
                 bullets={[
                   "Supported in the development of the company's website using Tailwind CSS, React.js and Material UI",
                   "Planned weekly sprints using Jira",
-                  "Updated and maintained the company's website with new contentm, videos and photos"
+                  "Updated and maintained the company's website with new contentm, videos and photos",
                 ]}
               />
             </div>
             <div className="mb-4">
               <ExperienceCard
                 imgPath={ldrs}
+                imgClassName="logo-uniform-size"
                 isBlog={false}
                 title="Full Stack Developer Intern"
                 subtitle="LDRS Investments Incorporated"
@@ -98,13 +117,14 @@ function Experience() {
                   "Produced a full-stack website in a small team of 4 using Django, MySQL, Python, Javascript and React.Js",
                   "Designed an instantaneous chat feature for customer-to-service representatives using Django channels and React.Js that helped increase customer service by 70%",
                   "Implemented a login-authentication screen for newly registered users that boasts the security of the platform by 36%",
-                  "Devised and upheld sprints through Trello and Git Bash to increase efficiency by 22%"
+                  "Devised and upheld sprints through Trello and Git Bash to increase efficiency by 22%",
                 ]}
               />
             </div>
             <div className="mb-4">
               <ExperienceCard
                 imgPath={bgctk}
+                imgClassName="logo-uniform-size"
                 isBlog={false}
                 title="Kids Tech Nation Mentor"
                 subtitle="BGCTK"
@@ -113,7 +133,7 @@ function Experience() {
                 bullets={[
                   "Devised a curriculum for kids to learn Scratch",
                   "Created weekly presentations and tasks for each new topic",
-                  "Raised over $5000 in funding for new equipment such as laptops, tablets, keyboards and etc.."
+                  "Raised over $5000 in funding for new equipment such as laptops, tablets, keyboards and etc..",
                 ]}
               />
             </div>
