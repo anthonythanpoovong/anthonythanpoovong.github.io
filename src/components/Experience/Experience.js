@@ -60,11 +60,9 @@ function Experience() {
                 subtitle3="Toronto, ON"
                 bullets={[
                   "Performed a backup of the MySQL database and executed a vault migration due to an update to RHEL8",
-                  "Produced scripts in Vim to resolve the issue of crontabs not being connected to the MySQL servers",
                   "Deploying vaults through Scotiabank’s Linux servers on unresponsive servers to increase client efficiency by 20%",
                   "Managing API calls to the vault and the MySQL server while deploying visual data on PowerBI",
                   "Researching and documenting the Confluence pages on the threats and use cases of Quantum Cryptography",
-                  "Rotating as Cloud Security Engineer to troubleshoot Kubernetes deployment issues",
                 ]}
               />
             </div>

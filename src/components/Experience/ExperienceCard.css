@@ -1,3 +1,23 @@
+.experience-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 80%; /* or a fixed width like 800px */
+  margin: 2rem auto; /* this centers the card horizontally */
+  padding: 2rem;
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.experience-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .experience-card-view {
     margin-bottom: 20px; /* Adjust as needed */
   }
