@@ -1,4 +1,5 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { useState } from "react";
+import { Container } from "react-bootstrap";
 import bgctk from "../../Assets/Projects/bgctk.png";
 import eastside from "../../Assets/Projects/eastside.png";
 import ezML from "../../Assets/Projects/ezML_2.png";
@@ -7,130 +8,294 @@ import scotiabank from "../../Assets/Projects/scotiabank.png";
 import td from "../../Assets/Projects/td.png";
 import telus from "../../Assets/Projects/telus.png";
 import Particle from "../Particle";
-import ExperienceCard from "./ExperienceCard";
+
+const experiences = [
+  {
+    id: "telus",
+    logo: telus,
+    title: "Incoming Cybersecurity Engineer",
+    company: "Telus",
+    period: "October 2025 - Present",
+    location: "Toronto, ON",
+  },
+  {
+    id: "ezml",
+    logo: ezML,
+    title: "Software Engineer Intern",
+    company: "ezML",
+    period: "February 2024 - April 2024",
+    location: "San Francisco, CA",
+  },
+  {
+    id: "scotiabank",
+    logo: scotiabank,
+    title: "Security Engineer Intern",
+    company: "Scotiabank",
+    period: "September 2023 - December 2023",
+    location: "Toronto, ON",
+  },
+  {
+    id: "td",
+    logo: td,
+    title: "Quality Engineer Intern",
+    company: "TD Bank",
+    period: "May 2023 - August 2023",
+    location: "Toronto, ON",
+  },
+  {
+    id: "eastside",
+    logo: eastside,
+    title: "Software Developer",
+    company: "Eastside",
+    period: "January 2023 - August 2023",
+    location: "Toronto, ON",
+  },
+  {
+    id: "ldrs",
+    logo: ldrs,
+    title: "Full Stack Developer Intern",
+    company: "LDRS Investments Incorporated",
+    period: "January 2023 - April 2023",
+    location: "Toronto, ON",
+  },
+  {
+    id: "bgctk",
+    logo: bgctk,
+    title: "Kids Tech Nation Mentor",
+    company: "BGCTK",
+    period: "September 2022 - December 2022",
+    location: "Toronto, ON",
+  },
+];
 
 function Experience() {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
   return (
     <Container fluid className="experience-section">
       <Particle />
       <Container>
-        <h1 className="experience-heading">
-          <strong className="purple">Relevant Work Experience</strong>
-        </h1>
-        <p style={{ color: "white" }}>Here are my past work experiences</p>
-        <Row className="justify-content-center mt-4">
-          {" "}
-          {/* Added mt-4 for margin-top */}
-          <Col md={8} className="d-flex flex-column align-items-center">
-            <div className="mb-4">
-              <ExperienceCard
-                imgPath={telus}
-                isBlog={false}
-                title="Incoming Cybersecurity Engineer"
-                subtitle="Telus"
-                subtitle2="October 2025 - Present"
-                subtitle3="Toronto, ON"
-                bullets={[
-                  "Technology Specialist GTLP - TELUS Cybersecurity Engineer",
-                ]}
-              />
+        {/* Header */}
+        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+          <h1 className="experience-heading">
+            <strong className="purple">Relevant Work Experience</strong>
+          </h1>
+          <p style={{ color: "white" }}>Here are my past work experiences</p>
+        </div>
+
+        {/* Timeline Container */}
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            position: "relative",
+            paddingLeft: "2rem",
+            paddingRight: "2rem",
+          }}
+        >
+          {/* Vertical Timeline Line */}
+          <div
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "0",
+              bottom: "0",
+              width: "2px",
+              backgroundColor: "#333",
+              zIndex: 1,
+              transform: "translateX(-50%)",
+            }}
+          />
+
+          {/* Timeline Items */}
+          {experiences.map((exp, index) => (
+            <div
+              key={exp.id}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "2.5rem",
+                position: "relative",
+                justifyContent: "center",
+              }}
+            >
+              {/* Company Logo */}
+              <div
+                style={{
+                  width: "140px",
+                  height: "140px",
+                  borderRadius: "50%",
+                  backgroundColor: "#fff",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  border:
+                    hoveredItem === exp.id
+                      ? "4px solid #d11dd1"
+                      : "4px solid #333",
+                  transition: "all 0.3s ease",
+                  transform: hoveredItem === exp.id ? "scale(1.1)" : "scale(1)",
+                  boxShadow:
+                    hoveredItem === exp.id
+                      ? "0 0 25px rgba(209, 29, 209, 0.5)"
+                      : "0 0 15px rgba(0,0,0,0.3)",
+                  zIndex: 2,
+                  position: "relative",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={() => setHoveredItem(exp.id)}
+                onMouseLeave={() => setHoveredItem(null)}
+              >
+                <img
+                  src={exp.logo}
+                  alt={exp.company}
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                    objectFit: "contain",
+                    borderRadius: "50%",
+                  }}
+                />
+
+                {/* Hover Card - Positioned to the right */}
+                {hoveredItem === exp.id && (
+                  <div
+                    className="hover-card"
+                    style={{
+                      position: "absolute",
+                      left: "160px",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      backgroundColor: "#1a1a2e",
+                      borderRadius: "12px",
+                      padding: "2rem",
+                      boxShadow: "0 0 20px rgba(209, 29, 209, 0.3)",
+                      border: "1px solid #333",
+                      width: "400px",
+                      zIndex: 10,
+                      animation:
+                        "slideInFromLeft 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+                      opacity: 1,
+                    }}
+                  >
+                    {/* Job Title */}
+                    <h3
+                      className="card-title"
+                      style={{
+                        color: "#d11dd1",
+                        fontSize: "1.4rem",
+                        fontWeight: "bold",
+                        marginBottom: "0.5rem",
+                        margin: 0,
+                      }}
+                    >
+                      {exp.title}
+                    </h3>
+
+                    {/* Company */}
+                    <h4
+                      style={{
+                        color: "#fff",
+                        fontSize: "1.2rem",
+                        marginBottom: "0.3rem",
+                        fontStyle: "italic",
+                        margin: "0.5rem 0",
+                      }}
+                    >
+                      {exp.company}
+                    </h4>
+
+                    {/* Period */}
+                    <p
+                      style={{
+                        color: "#ccc",
+                        fontSize: "1rem",
+                        fontStyle: "italic",
+                        marginBottom: "0.3rem",
+                        margin: "0.3rem 0",
+                      }}
+                    >
+                      {exp.period}
+                    </p>
+
+                    {/* Location */}
+                    <p
+                      style={{
+                        color: "#ccc",
+                        fontSize: "1rem",
+                        margin: "0.3rem 0",
+                      }}
+                    >
+                      {exp.location}
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
-            <div className="mb-4">
-              <ExperienceCard
-                imgPath={ezML}
-                isBlog={false}
-                title="Software Engineer Intern"
-                subtitle="ezML"
-                subtitle2="February 2024 - April 2024"
-                subtitle3="San Francisco, CA"
-                bullets={[
-                  "Deployed a cloud-based server to store videos for ezML’s computer vision program",
-                  "Developed a front-end interface for customers to schedule a consultation with ezML",
-                  "Worked with the back-end team to conduct code reviews on CV pipelines",
-                ]}
-              />
-            </div>
-            <div className="mb-4">
-              <ExperienceCard
-                imgPath={scotiabank}
-                isBlog={false}
-                title="Security Engineer Intern"
-                subtitle="Scotiabank"
-                subtitle2="September 2023 - December 2023"
-                subtitle3="Toronto, ON"
-                bullets={[
-                  "Performed a backup of the MySQL database and executed a vault migration due to an update to RHEL8",
-                  "Deploying vaults through Scotiabank’s Linux servers on unresponsive servers to increase client efficiency by 20%",
-                  "Managing API calls to the vault and the MySQL server while deploying visual data on PowerBI",
-                  "Researching and documenting the Confluence pages on the threats and use cases of Quantum Cryptography",
-                ]}
-              />
-            </div>
-            <div className="mb-4">
-              <ExperienceCard
-                imgPath={td}
-                isBlog={false}
-                title="Quality Engineer Intern"
-                subtitle="TD Bank"
-                subtitle2="May 2023 - August 2023"
-                subtitle3="Toronto, ON"
-                bullets={[
-                  "Collaborated in a small team of 10 to extract data from TD’s Wealth and Finance databases using SQL",
-                  "Composed over 100 feature files for the Security Management Team and DaaS platforms using Java and Selenium",
-                  "Tested and mapped the traceability of the data through several test cases and TD automated tools to increase efficiency by 20%",
-                  "Developed scripts that automated tasks such as database backups and restore servers, saving approximately 20 hours per week",
-                ]}
-              />
-            </div>
-            <div className="mb-4">
-              <ExperienceCard
-                imgPath={eastside}
-                isBlog={false}
-                title="Software Developer"
-                subtitle="Eastside"
-                subtitle2="January 2023 - August 2023"
-                subtitle3="Toronto, ON"
-                bullets={[
-                  "Supported in the development of the company's website using Tailwind CSS, React.js and Material UI",
-                  "Planned weekly sprints using Jira",
-                  "Updated and maintained the company's website with new contentm, videos and photos",
-                ]}
-              />
-            </div>
-            <div className="mb-4">
-              <ExperienceCard
-                imgPath={ldrs}
-                isBlog={false}
-                title="Full Stack Developer Intern"
-                subtitle="LDRS Investments Incorporated"
-                subtitle2="January 2023 - April 2023"
-                subtitle3="Toronto, ON"
-                bullets={[
-                  "Produced a full-stack website in a small team of 4 using Django, MySQL, Python, Javascript and React.Js",
-                  "Designed an instantaneous chat feature for customer-to-service representatives using Django channels and React.Js that helped increase customer service by 70%",
-                  "Implemented a login-authentication screen for newly registered users that boasts the security of the platform by 36%",
-                  "Devised and upheld sprints through Trello and Git Bash to increase efficiency by 22%",
-                ]}
-              />
-            </div>
-            <div className="mb-4">
-              <ExperienceCard
-                imgPath={bgctk}
-                isBlog={false}
-                title="Kids Tech Nation Mentor"
-                subtitle="BGCTK"
-                subtitle2="September 2022 - December 2022"
-                subtitle3="Toronto, ON"
-                bullets={[
-                  "Devised a curriculum for kids to learn Scratch",
-                  "Created weekly presentations and tasks for each new topic",
-                  "Raised over $5000 in funding for new equipment such as laptops, tablets, keyboards and etc..",
-                ]}
-              />
-            </div>
-          </Col>
-        </Row>
+          ))}
+        </div>
       </Container>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            @keyframes slideInFromLeft {
+              0% {
+                opacity: 0;
+                transform: translateY(-50%) translateX(-50px);
+                visibility: hidden;
+              }
+              1% {
+                visibility: visible;
+              }
+              100% {
+                opacity: 1;
+                transform: translateY(-50%) translateX(0);
+                visibility: visible;
+              }
+            }
+            
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            /* Add staggered animation for content inside hover card */
+            .hover-card h3 {
+              animation: slideInContent 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
+            }
+            
+            .hover-card h4 {
+              animation: slideInContent 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+            }
+            
+            .hover-card p:first-of-type {
+              animation: slideInContent 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+            }
+            
+            .hover-card p:last-of-type {
+              animation: slideInContent 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+            }
+
+            @keyframes slideInContent {
+              0% {
+                opacity: 0;
+                transform: translateX(-20px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+          `,
+        }}
+      />
     </Container>
   );
 }
