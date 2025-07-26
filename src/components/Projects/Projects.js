@@ -11,6 +11,7 @@ import recognize from "../../Assets/Projects/recognize.png";
 import resume from "../../Assets/Projects/resume_2.png";
 import Satellite from "../../Assets/Projects/satellite.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
+import ticket from "../../Assets/Projects/ticket.png";
 
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
@@ -127,6 +128,7 @@ function Projects() {
                 createSkill("TypeScript", "#2335fcff"),
                 createSkill("NextJS", "#27c08aff"),
                 createSkill("Tailwind CSS", "#336d59ff"),
+                createSkill("Azure", "#1520A6"),
                 createSkill("RabbitMQ", "#ec5c80ff"),
               ]}
               subtitle="Completed"
@@ -163,6 +165,43 @@ function Projects() {
                 createSkill("React", "#61DAFB"),
               ]}
               subtitle="Completed"
+              ghLink="https://github.com/anthonythanpoovong/Road-Sign-Tracker"
+            />
+          </Col>
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
+            <ProjectCard
+              imgPath={ticket}
+              isBlog={false}
+              title="Customer Support Ticketing System"
+              description={
+                <ul>
+                  <li>
+                    Submit a Ticket: Allows clients to submit a technical or
+                    reward-related support request
+                  </li>
+                  <li>
+                    Real-time Tracking: Allows clients to track the status of
+                    their support tickets in real-time
+                  </li>
+                  <li>
+                    Real-time Chat: Provide real-time chat to clients for quick
+                    support solutions
+                  </li>
+                  <li>
+                    Administrator Management: Allows administrators to assign
+                    support agents and manage requests
+                  </li>
+                </ul>
+              }
+              skills={[
+                createSkill("Python", "#3776ab"),
+                createSkill("FastAPI", "#1c3950ff"),
+                createSkill("MongoDB", "#47A248"),
+                createSkill("React", "#61DAFB"),
+                createSkill("TypeScript", "#2335fcff"),
+              ]}
+              subtitle="Completed"
+              ghLink="https://github.com/anthonythanpoovong/BizPoints-Customer-Support-Ticketing-System"
             />
           </Col>
           <Col md={4} className="project-card" style={{ display: "flex" }}>
