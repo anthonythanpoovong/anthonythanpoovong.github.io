@@ -18,8 +18,8 @@ function AboutCard() {
             <span className="purple">Anthony Thanpoovong </span>
             and I'm from <span className="purple"> Toronto, Ontario.</span>
             <br />
-            I'm currently in my 5th year as a software engineering student at
-            Toronto Metropolitan University
+            I'm a recent new graduate from Toronto Metropolitan University with
+            a degree in <span className="purple"> Software Engineering.</span>.
             <br />
             I'm passionate about software development, security and AI related
             work.
