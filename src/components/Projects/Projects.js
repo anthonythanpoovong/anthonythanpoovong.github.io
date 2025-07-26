@@ -126,7 +126,7 @@ function Projects() {
       description: (
         <ul>
           <li>
-            Manipulating a phone camera to recognize road signs in Ontario
+            Manipulating a Yolov8 model to recognize road signs in real-time
           </li>
           <li>The project aims to have an accuracy of 80%</li>
           <li>
@@ -141,6 +141,7 @@ function Projects() {
       ),
       skills: [
         createSkill("Python", "#3776ab"),
+        createSkill("FastAPI", "#1c3950ff"),
         createSkill("OpenCV", "#5C3EE8"),
         createSkill("TensorFlow", "#FF6F00"),
         createSkill("React", "#61DAFB"),
