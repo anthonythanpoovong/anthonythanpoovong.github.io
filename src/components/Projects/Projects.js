@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import administration from "../../Assets/Projects/admin.png";
 import LLM from "../../Assets/Projects/ai.png";
@@ -19,11 +18,29 @@ import {
   DiJavascript1,
   DiMongodb,
   DiNodejs,
-  DiReact
+  DiReact,
 } from "react-icons/di";
-import { FaAws, FaCss3, FaDocker, FaHtml5, FaJava, FaPython } from "react-icons/fa";
+import {
+  FaAws,
+  FaCss3,
+  FaDocker,
+  FaHtml5,
+  FaJava,
+  FaPython,
+} from "react-icons/fa";
 import { GrOracle } from "react-icons/gr";
-import { SiAndroidstudio, SiApachekafka, SiArduino, SiJupyter, SiKubernetes, SiMysql, SiOpencv, SiPrisma, SiTailwindcss, SiTensorflow, SiTypescript } from "react-icons/si";
+import {
+  SiApachekafka,
+  SiArduino,
+  SiJupyter,
+  SiKubernetes,
+  SiMysql,
+  SiOpencv,
+  SiPrisma,
+  SiTailwindcss,
+  SiTensorflow,
+  SiTypescript,
+} from "react-icons/si";
 
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
@@ -40,69 +57,94 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={recognize}
               isBlog={false}
               title="Road Sign Recognition"
               description={
                 <ul>
-                  <li>Manipulating a phone camera to recognize road signs in Ontario</li>
+                  <li>
+                    Manipulating a phone camera to recognize road signs in
+                    Ontario
+                  </li>
                   <li>The project aims to have an accuracy of 80%</li>
-                  <li>Designing and training a deep-learning model to classify different road signs from different angles, weather conditions, and lighting</li>
-                  <li>Enables autonomous vehicles to recognize and respond accordinly to road signs</li>
-                  <li>Helps improve road safety, compliance with traffic laws and driving comfort.</li>
+                  <li>
+                    Designing and training a deep-learning model to classify
+                    different road signs from different angles, weather
+                    conditions, and lighting
+                  </li>
+                  <li>
+                    Enables autonomous vehicles to recognize and respond
+                    accordinly to road signs
+                  </li>
+                  <li>
+                    Helps improve road safety, compliance with traffic laws and
+                    driving comfort.
+                  </li>
                 </ul>
               }
               skills={[
-                <FaPython/>,
-                <SiOpencv/>,
-                <SiTensorflow/>,
-                <DiReact/>,
-                <SiAndroidstudio/>,
-                <FaJava/>,
+                <FaPython />,
+                <SiOpencv />,
+                <SiTensorflow />,
+                <DiReact />,
               ]}
-              subtitle="Planning Phase"
+              subtitle="Completed"
             />
           </Col>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={discord}
               isBlog={false}
               title="Full Stack Discord Clone"
               description={
                 <ul>
-                  <li>Replicating the discord application both front-end and back-end</li>
+                  <li>
+                    Replicating the discord application both front-end and
+                    back-end
+                  </li>
                   <li>User's are able to login and message other people</li>
                   <li>These messages are stored on the user's account</li>
-                  <li>User's are able to create servers and group chats as well</li>
+                  <li>
+                    User's are able to create servers and group chats as well
+                  </li>
                 </ul>
               }
               skills={[
-                <DiJavascript1/>,
+                <DiJavascript1 />,
                 <DiMongodb />,
-                <SiMysql/>,
-                <DiReact/>,
-                <SiTailwindcss/>,
-                <FaCss3/>,
-                <SiPrisma/>,
-                <SiTypescript/>,
-                <DiGit/>,
+                <SiMysql />,
+                <DiReact />,
+                <SiTailwindcss />,
+                <FaCss3 />,
+                <SiPrisma />,
+                <SiTypescript />,
+                <DiGit />,
               ]}
               subtitle="Planning Phase"
             />
           </Col>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={LLM}
               isBlog={false}
               title="LLM Tabular Data Analysis"
               description={
                 <ul>
-                  <li>System accepts tabular data input in formats like CSV and or Excel</li>
+                  <li>
+                    System accepts tabular data input in formats like CSV and or
+                    Excel
+                  </li>
                   <li>Manipulating data processing using Pandas</li>
-                  <li>Using machine learning techniques such as regression analysis, clustering, or clustering</li>
-                  <li>LLM can detect trends and patterns, to summarize and display visualizations of the tabular data </li>
+                  <li>
+                    Using machine learning techniques such as regression
+                    analysis, clustering, or clustering
+                  </li>
+                  <li>
+                    LLM can detect trends and patterns, to summarize and display
+                    visualizations of the tabular data{" "}
+                  </li>
                 </ul>
               }
               skills={[
@@ -111,39 +153,44 @@ function Projects() {
                 <DiMongodb />,
                 <FaDocker />,
                 <SiKubernetes />,
-                <DiReact/>,
-                <DiJavascript1/>,
-                <FaAws/>,
-                <SiApachekafka/>
+                <DiReact />,
+                <DiJavascript1 />,
+                <FaAws />,
+                <SiApachekafka />,
               ]}
-              subtitle="Requirements & Elicitation Stage"
+              subtitle="Completed"
+              ghLink="https://github.com/TabularLLM"
             />
           </Col>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={basketball}
               isBlog={false}
               title="NBA Sports Betting Analyis Application"
               description={
                 <ul>
-                  <li>Predicts odds for a player's points, assists, and rebounds</li>
+                  <li>
+                    Predicts odds for a player's points, assists, and rebounds
+                  </li>
                   <li>Analyzes team vs team predictions</li>
                   <li>Frontend implemented with Javascript, React, Tailwind</li>
-                  <li>Machine Learning using a supervised dataset with Python </li>
+                  <li>
+                    Machine Learning using a supervised dataset with Python{" "}
+                  </li>
                 </ul>
               }
               skills={[
                 <FaPython />,
-                <DiNodejs/>,
-                <DiReact/>,
-                <DiJavascript1/>,
-                <SiTailwindcss/>,
-                <FaCss3/>,
-                <DiHeroku/>,
-                <DiGit/>,
-                <SiMysql/>  
+                <DiNodejs />,
+                <DiReact />,
+                <DiJavascript1 />,
+                <SiTailwindcss />,
+                <FaCss3 />,
+                <DiHeroku />,
+                <DiGit />,
+                <SiMysql />,
               ]}
-              subtitle= "Prototype Stage"
+              subtitle="Prototype Stage"
               ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
             />
           </Col>
@@ -155,20 +202,26 @@ function Projects() {
               description={
                 <ul>
                   <li>Resume-building web application</li>
-                  <li>Users can login, create, edit and save resumes with their registed account</li>
-                  <li>Built upon previous knowledge of Servlets, Forms and N-tier architecture</li>
+                  <li>
+                    Users can login, create, edit and save resumes with their
+                    registed account
+                  </li>
+                  <li>
+                    Built upon previous knowledge of Servlets, Forms and N-tier
+                    architecture
+                  </li>
                   <li>Implemented with Java, HTML, Docker, Kubernetes</li>
                   <li>Microservices deployed on Google Cloud</li>
                 </ul>
               }
               skills={[
                 <FaJava />,
-                <FaHtml5/>,
-                <FaCss3/>,
+                <FaHtml5 />,
+                <FaCss3 />,
                 <FaDocker />,
                 <SiKubernetes />,
               ]}
-              subtitle= "Completed"
+              subtitle="Completed"
               ghLink="https://github.com/Resumeholic/resumeholic-prototype"
             />
           </Col>
@@ -180,16 +233,17 @@ function Projects() {
               title="Book Store"
               description={
                 <ul>
-                  <li>A book store application thats allows customers to purchase books from a catalog using checkboxes</li>
+                  <li>
+                    A book store application thats allows customers to purchase
+                    books from a catalog using checkboxes
+                  </li>
                   <li>Owners can add books and adjust prices</li>
                   <li>Used a hashmap to store the books</li>
                   <li>Built with Java and Java FXML for GUI</li>
                 </ul>
               }
-              skills={[
-                <FaJava />
-              ]}
-              subtitle= "Completed"
+              skills={[<FaJava />]}
+              subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/BookStore-App"
             />
           </Col>
@@ -202,16 +256,15 @@ function Projects() {
               description={
                 <ul>
                   <li>University student administration system</li>
-                  <li>Students view personal info, fees, courses, and grades</li>
+                  <li>
+                    Students view personal info, fees, courses, and grades
+                  </li>
                   <li>Admins manage students, professors, and grades</li>
                   <li>Built with Oracle Apex and SQL</li>
                 </ul>
               }
-              subtitle= "Completed"
-              skills={[
-                <AiOutlineConsoleSql/>,
-                <GrOracle/>
-              ]}
+              subtitle="Completed"
+              skills={[<AiOutlineConsoleSql />, <GrOracle />]}
               GrOracle
               ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
               demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
@@ -230,10 +283,8 @@ function Projects() {
                   <li>Implemented using Python and and GUI uses Tkinter</li>
                 </ul>
               }
-              skills={[
-                <FaPython />
-              ]}
-              subtitle= "Completed"
+              skills={[<FaPython />]}
+              subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
             />
           </Col>
@@ -245,16 +296,17 @@ function Projects() {
               title="Helicopter Prison Break Analysis"
               description={
                 <ul>
-                  <li>Peformed Data Analysis to analyze helicopter prison breaks</li>
+                  <li>
+                    Peformed Data Analysis to analyze helicopter prison breaks
+                  </li>
                   <li>Used Python and Jupyter Notebook</li>
-                  <li>Created infographics and charts for data visualization</li>
+                  <li>
+                    Created infographics and charts for data visualization
+                  </li>
                 </ul>
               }
-              skills = {[
-                <FaPython />,
-                <SiJupyter/>
-              ]}
-              subtitle= "Completed"
+              skills={[<FaPython />, <SiJupyter />]}
+              subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
             />
           </Col>
@@ -269,14 +321,13 @@ function Projects() {
                   <li>Created a keypad-based door lock system</li>
                   <li>Alarm will sound when an incorrect password occurs</li>
                   <li>Used C++ and an Arduino Kit</li>
-                  <li>Components: Arduino Uno, LCD, 4x4 Keypad, Solenoid Lock</li>
+                  <li>
+                    Components: Arduino Uno, LCD, 4x4 Keypad, Solenoid Lock
+                  </li>
                 </ul>
               }
-              skills = {[
-                <CgCPlusPlus />,
-                <SiArduino/>
-              ]}
-              subtitle= "Completed"
+              skills={[<CgCPlusPlus />, <SiArduino />]}
+              subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
             />
           </Col>
