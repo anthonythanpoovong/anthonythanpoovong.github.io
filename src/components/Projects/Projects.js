@@ -10,42 +10,29 @@ import recognize from "../../Assets/Projects/recognize.png";
 import resume from "../../Assets/Projects/resume_2.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
 
-import { AiOutlineConsoleSql } from "react-icons/ai";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiGit,
-  DiHeroku,
-  DiJavascript1,
-  DiMongodb,
-  DiNodejs,
-  DiReact,
-} from "react-icons/di";
-import {
-  FaAws,
-  FaCss3,
-  FaDocker,
-  FaHtml5,
-  FaJava,
-  FaPython,
-} from "react-icons/fa";
-import { GrOracle } from "react-icons/gr";
-import {
-  SiApachekafka,
-  SiArduino,
-  SiJupyter,
-  SiKubernetes,
-  SiMysql,
-  SiOpencv,
-  SiPrisma,
-  SiTailwindcss,
-  SiTensorflow,
-  SiTypescript,
-} from "react-icons/si";
-
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
 function Projects() {
+  // Helper function to create colorful skill text with colored boxes
+  const createSkill = (text, color) => (
+    <span
+      style={{
+        color: "#ffffff",
+        backgroundColor: color,
+        fontWeight: "bold",
+        fontSize: "12px",
+        padding: "6px 12px",
+        margin: "4px",
+        borderRadius: "20px",
+        display: "inline-block",
+        boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+      }}
+    >
+      {text}
+    </span>
+  );
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -57,6 +44,43 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LLM}
+              isBlog={false}
+              title="LLM Tabular Data Analysis"
+              description={
+                <ul>
+                  <li>
+                    System accepts tabular data input in formats like CSV and or
+                    Excel
+                  </li>
+                  <li>Manipulating data processing using Pandas</li>
+                  <li>
+                    Using machine learning techniques such as regression
+                    analysis, clustering, or clustering
+                  </li>
+                  <li>
+                    LLM can detect trends and patterns, to summarize and display
+                    visualizations of the tabular data{" "}
+                  </li>
+                </ul>
+              }
+              skills={[
+                createSkill("Python", "#3776ab"),
+                createSkill("SQL", "#336791"),
+                createSkill("MongoDB", "#47A248"),
+                createSkill("Docker", "#2496ED"),
+                createSkill("Kubernetes", "#326CE5"),
+                createSkill("React", "#61DAFB"),
+                createSkill("JavaScript", "#F5BF03"),
+                createSkill("Azure", "#1520A6"),
+                createSkill("Blob Buckets", "#231F20"),
+              ]}
+              subtitle="Completed"
+              ghLink="https://github.com/TabularLLM"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={recognize}
@@ -85,10 +109,10 @@ function Projects() {
                 </ul>
               }
               skills={[
-                <FaPython />,
-                <SiOpencv />,
-                <SiTensorflow />,
-                <DiReact />,
+                createSkill("Python", "#3776ab"),
+                createSkill("OpenCV", "#5C3EE8"),
+                createSkill("TensorFlow", "#FF6F00"),
+                createSkill("React", "#61DAFB"),
               ]}
               subtitle="Completed"
             />
@@ -112,54 +136,17 @@ function Projects() {
                 </ul>
               }
               skills={[
-                <DiJavascript1 />,
-                <DiMongodb />,
-                <SiMysql />,
-                <DiReact />,
-                <SiTailwindcss />,
-                <FaCss3 />,
-                <SiPrisma />,
-                <SiTypescript />,
-                <DiGit />,
+                createSkill("JavaScript", "#F5BF03"),
+                createSkill("MongoDB", "#47A248"),
+                createSkill("MySQL", "#4479A1"),
+                createSkill("React", "#61DAFB"),
+                createSkill("Tailwind CSS", "#06B6D4"),
+                createSkill("CSS3", "#1572B6"),
+                createSkill("Prisma", "#2D3748"),
+                createSkill("TypeScript", "#3178C6"),
+                createSkill("Git", "#F05032"),
               ]}
               subtitle="Planning Phase"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={LLM}
-              isBlog={false}
-              title="LLM Tabular Data Analysis"
-              description={
-                <ul>
-                  <li>
-                    System accepts tabular data input in formats like CSV and or
-                    Excel
-                  </li>
-                  <li>Manipulating data processing using Pandas</li>
-                  <li>
-                    Using machine learning techniques such as regression
-                    analysis, clustering, or clustering
-                  </li>
-                  <li>
-                    LLM can detect trends and patterns, to summarize and display
-                    visualizations of the tabular data{" "}
-                  </li>
-                </ul>
-              }
-              skills={[
-                <FaPython />,
-                <AiOutlineConsoleSql />,
-                <DiMongodb />,
-                <FaDocker />,
-                <SiKubernetes />,
-                <DiReact />,
-                <DiJavascript1 />,
-                <FaAws />,
-                <SiApachekafka />,
-              ]}
-              subtitle="Completed"
-              ghLink="https://github.com/TabularLLM"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -180,15 +167,15 @@ function Projects() {
                 </ul>
               }
               skills={[
-                <FaPython />,
-                <DiNodejs />,
-                <DiReact />,
-                <DiJavascript1 />,
-                <SiTailwindcss />,
-                <FaCss3 />,
-                <DiHeroku />,
-                <DiGit />,
-                <SiMysql />,
+                createSkill("Python", "#3776ab"),
+                createSkill("Node.js", "#339933"),
+                createSkill("React", "#61DAFB"),
+                createSkill("JavaScript", "#F5BF03"),
+                createSkill("Tailwind CSS", "#06B6D4"),
+                createSkill("CSS3", "#1572B6"),
+                createSkill("Heroku", "#430098"),
+                createSkill("Git", "#F05032"),
+                createSkill("MySQL", "#4479A1"),
               ]}
               subtitle="Prototype Stage"
               ghLink="https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
@@ -215,11 +202,11 @@ function Projects() {
                 </ul>
               }
               skills={[
-                <FaJava />,
-                <FaHtml5 />,
-                <FaCss3 />,
-                <FaDocker />,
-                <SiKubernetes />,
+                createSkill("Java", "#ED8B00"),
+                createSkill("HTML5", "#E34F26"),
+                createSkill("CSS3", "#1572B6"),
+                createSkill("Docker", "#2496ED"),
+                createSkill("Kubernetes", "#326CE5"),
               ]}
               subtitle="Completed"
               ghLink="https://github.com/Resumeholic/resumeholic-prototype"
@@ -242,7 +229,7 @@ function Projects() {
                   <li>Built with Java and Java FXML for GUI</li>
                 </ul>
               }
-              skills={[<FaJava />]}
+              skills={[createSkill("Java", "#ED8B00")]}
               subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/BookStore-App"
             />
@@ -264,8 +251,10 @@ function Projects() {
                 </ul>
               }
               subtitle="Completed"
-              skills={[<AiOutlineConsoleSql />, <GrOracle />]}
-              GrOracle
+              skills={[
+                createSkill("SQL", "#336791"),
+                createSkill("Oracle", "#F80000"),
+              ]}
               ghLink="https://github.com/anthonythanpoovong/University-Administration-System"
               demoLink="https://apex.oracle.com/pls/apex/r/ramss/better-ramss/login?session=14818000220722"
             />
@@ -283,7 +272,7 @@ function Projects() {
                   <li>Implemented using Python and and GUI uses Tkinter</li>
                 </ul>
               }
-              skills={[<FaPython />]}
+              skills={[createSkill("Python", "#3776ab")]}
               subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/Tic-Tac-Toe"
             />
@@ -305,7 +294,10 @@ function Projects() {
                   </li>
                 </ul>
               }
-              skills={[<FaPython />, <SiJupyter />]}
+              skills={[
+                createSkill("Python", "#3776ab"),
+                createSkill("Jupyter", "#F37626"),
+              ]}
               subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/Helicopter-Prison-Break-Analysis"
             />
@@ -326,7 +318,10 @@ function Projects() {
                   </li>
                 </ul>
               }
-              skills={[<CgCPlusPlus />, <SiArduino />]}
+              skills={[
+                createSkill("C++", "#00599C"),
+                createSkill("Arduino", "#00979D"),
+              ]}
               subtitle="Completed"
               ghLink="https://github.com/anthonythanpoovong/Keypad-Door-Lock"
             />

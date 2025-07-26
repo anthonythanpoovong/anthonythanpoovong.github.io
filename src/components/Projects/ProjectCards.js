@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { BsGithub } from "react-icons/bs";
@@ -20,15 +19,29 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
 
-        {/* New Skills Section with Icons */}
+        {/* Skills Section without purple box */}
         {props.skills && props.skills.length > 0 && (
-          <div className="skills-box">
-            <h5>Languages/Tools Used:</h5>
-            <div className="skills-grid">
+          <div
+            style={{
+              background: "none",
+              border: "none",
+              padding: "0",
+              margin: "15px 0",
+            }}
+          >
+            <h5 style={{ marginBottom: "10px", color: "white" }}>
+              Languages/Tools Used:
+            </h5>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "5px",
+                justifyContent: "flex-start",
+              }}
+            >
               {props.skills.map((skill, index) => (
-                <div key={index} className="tech-icons">
-                  {skill}
-                </div>
+                <div key={index}>{skill}</div>
               ))}
             </div>
           </div>
