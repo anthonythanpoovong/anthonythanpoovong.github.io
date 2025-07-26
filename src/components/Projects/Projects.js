@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import administration from "../../Assets/Projects/admin.png";
 import LLM from "../../Assets/Projects/ai.png";
+import bank from "../../Assets/Projects/bank.png";
 import basketball from "../../Assets/Projects/basketball.png";
 import bookstore from "../../Assets/Projects/book-shop.png";
 import discord from "../../Assets/Projects/discord.png";
@@ -8,6 +9,7 @@ import doorlock from "../../Assets/Projects/keypad.png";
 import analysis from "../../Assets/Projects/prison.png";
 import recognize from "../../Assets/Projects/recognize.png";
 import resume from "../../Assets/Projects/resume_2.png";
+import Satellite from "../../Assets/Projects/satellite.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
 
 import Particle from "../Particle";
@@ -43,8 +45,15 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row
+          style={{
+            justifyContent: "center",
+            paddingBottom: "10px",
+            display: "flex",
+            alignItems: "stretch",
+          }}
+        >
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={LLM}
               isBlog={false}
@@ -68,20 +77,63 @@ function Projects() {
               }
               skills={[
                 createSkill("Python", "#3776ab"),
+                createSkill("FastAPI", "#1c3950ff"),
                 createSkill("SQL", "#336791"),
                 createSkill("MongoDB", "#47A248"),
                 createSkill("Docker", "#2496ED"),
                 createSkill("Kubernetes", "#326CE5"),
                 createSkill("React", "#61DAFB"),
                 createSkill("JavaScript", "#F5BF03"),
+                createSkill("TypeScript", "#2335fcff"),
+                createSkill("NextJS", "#27c08aff"),
+                createSkill("Tailwind CSS", "#336d59ff"),
                 createSkill("Azure", "#1520A6"),
-                createSkill("Blob Buckets", "#231F20"),
+                createSkill("Azure Blob Storage", "#170e2fff"),
+                createSkill("OpenAI", "#eb0c92ff"),
+                createSkill("Prompt Engineering", "#7b0c4fff"),
+                createSkill("Fine-tuning LLM's", "#7d4b69ff"),
               ]}
               subtitle="Completed"
               ghLink="https://github.com/TabularLLM"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
+            <ProjectCard
+              imgPath={Satellite}
+              isBlog={false}
+              title="Satellite Monitoring System"
+              description={
+                <ul>
+                  <li>
+                    Keeps track of the number of clients within a given service
+                    area, peak usage times of the system, and key logs of
+                    satellites in orbit.
+                  </li>
+                  <li>
+                    The backend portion is a combination of FastAPI application
+                    utilizing websockets for real-time data, RabbitMQ to handle
+                    logs, MongoDB for storage.
+                  </li>
+                </ul>
+              }
+              skills={[
+                createSkill("Python", "#3776ab"),
+                createSkill("FastAPI", "#1c3950ff"),
+                createSkill("MongoDB", "#47A248"),
+                createSkill("Docker", "#2496ED"),
+                createSkill("Kubernetes", "#326CE5"),
+                createSkill("React", "#61DAFB"),
+                createSkill("JavaScript", "#F5BF03"),
+                createSkill("TypeScript", "#2335fcff"),
+                createSkill("NextJS", "#27c08aff"),
+                createSkill("Tailwind CSS", "#336d59ff"),
+                createSkill("RabbitMQ", "#ec5c80ff"),
+              ]}
+              subtitle="Completed"
+              ghLink="https://github.com/anthonythanpoovong/Satellite-Monitoring-System"
+            />
+          </Col>
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={recognize}
               isBlog={false}
@@ -102,10 +154,6 @@ function Projects() {
                     Enables autonomous vehicles to recognize and respond
                     accordinly to road signs
                   </li>
-                  <li>
-                    Helps improve road safety, compliance with traffic laws and
-                    driving comfort.
-                  </li>
                 </ul>
               }
               skills={[
@@ -117,7 +165,33 @@ function Projects() {
               subtitle="Completed"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
+            <ProjectCard
+              imgPath={bank}
+              isBlog={false}
+              title="Secure Banking System"
+              description={
+                <ul>
+                  <li>
+                    RSA used for key exchange & AES for secure communication
+                  </li>
+                  <li>Create new accounts with unique account numbers</li>
+                  <li>
+                    Persist balances even after server restarts via transaction
+                    log
+                  </li>
+                  <li>Deposit, withdraw, and check balance functionalities</li>
+                  <li>
+                    TCP socket-based communication between client and server
+                  </li>
+                </ul>
+              }
+              skills={[createSkill("Python", "#3776ab")]}
+              subtitle="Completed"
+              ghLink="https://github.com/anthonythanpoovong/Secure-Banking-Protocol"
+            />
+          </Col>
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={discord}
               isBlog={false}
@@ -147,9 +221,10 @@ function Projects() {
                 createSkill("Git", "#F05032"),
               ]}
               subtitle="Planning Phase"
+              ghLink="https://github.com/anthonythanpoovong/MERN-Discord-Clone"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={basketball}
               isBlog={false}
