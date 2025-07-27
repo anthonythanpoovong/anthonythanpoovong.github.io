@@ -13,6 +13,7 @@
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "i": "^0.3.7",
+    "pdfjs-dist": "^5.1.91",
     "react": "^17.0.2",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^17.0.2",
@@ -22,7 +23,7 @@
     "react-parallax-tilt": "^1.7.42",
     "react-pdf": "^9.1.1",
     "react-router-dom": "^6.2.2",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-tsparticles": "^1.42.2",
     "typescript": "^3.9.10",
     "typewriter-effect": "^2.18.2",
@@ -31,8 +32,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,7 +41,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "browserslist": {
     "production": [
