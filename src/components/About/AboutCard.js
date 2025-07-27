@@ -19,7 +19,7 @@ function AboutCard() {
             and I'm from <span className="purple"> Toronto, Ontario.</span>
             <br />
             I'm a recent new graduate from Toronto Metropolitan University with
-            a degree in <span className="purple"> Software Engineering.</span>.
+            a degree in <span className="purple"> Software Engineering.</span>
             <br />
             I'm passionate about software development, security and AI related
             work.
