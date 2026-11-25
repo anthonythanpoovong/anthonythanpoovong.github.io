@@ -17,6 +17,11 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} AT</h3>
+          <h3>
+            <a href="/cutroom/terms/" style={{ color: "white" }}>Terms</a>
+            {" · "}
+            <a href="/cutroom/privacy/" style={{ color: "white" }}>Privacy</a>
+          </h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
